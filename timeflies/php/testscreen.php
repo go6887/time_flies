@@ -72,8 +72,6 @@ $(function(){
                   $msg     = '';
                   $err_msg = '';
 
-                  // $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t ORDER BY RAND() LIMIT 1";
-                  // $query  = "SELECT * FROM board WHERE comment NOT LIKE '%terro%'  order by id desc limit 1";
                   $query  = "UPDATE board SET used = 'yes' WHERE used IS NULL ORDER BY id asc limit 1";
                   $res    = mysqli_query( $link,$query );
                   $data = array();
