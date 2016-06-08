@@ -1,35 +1,6 @@
 <?php
-
-$db_host = 'localhost';
-$db_name = 'textboxes';
-$db_user = 'root';
-$db_pass = 'sch1ph0ldb';
-
-// connect database
-$link = mysqli_connect( $db_host, $db_user, $db_pass, $db_name );
-if ( $link !== false ) {
-
-    $msg     = '';
-    $err_msg = '';
-
-
-
-    $query  = "SELECT id, name, comment FROM board";
-    $res    = mysqli_query( $link,$query );
-    $data = array();
-    while( $row = mysqli_fetch_assoc( $res ) ) {
-        array_push( $data, $row);
-    }
-    arsort( $data );
-
-} else {
-    echo "failed to connenct database";
-}
-
-// close database
-mysqli_close( $link );
+    session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +15,6 @@ mysqli_close( $link );
     <div class="formessage">
       <p class="great">
           <?php
-            session_start();
             echo  "GREAT ".mb_strtoupper($_SESSION['name']).'<br>'." AND"." NOW.." ;
               ?>
 

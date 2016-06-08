@@ -1,7 +1,7 @@
 <?php
 
 $db_host = 'localhost';
-$db_name = 'textboxes';
+$db_name = 'textbox';
 $db_user = 'root';
 $db_pass = 'sch1ph0ldb';
 
@@ -12,15 +12,33 @@ if ( $link !== false ) {
     $msg     = '';
     $err_msg = '';
 
-    // $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t ORDER BY RAND() LIMIT 1";
-    // $query  = "SELECT * FROM board WHERE comment NOT LIKE '%terro%'  order by id desc limit 1";
-    $query  = "SELECT * FROM board order by id desc limit 1";
-    $res    = mysqli_query( $link,$query );
-    $data = array();
-    while( $row = mysqli_fetch_assoc( $res ) ) {
-        array_push( $data, $row);
+    if ( isset( $_POST['send'] ) === true ) {
+
+        $name     = $_POST['name']   ;
+        $comment = $_POST['comment'];
+
+        if ( $name !== '' || $comment !== '' ) {
+
+            $query = " INSERT INTO board ( "
+                   . "    name , "
+                   . "    comment "
+                   . " ) VALUES ( "
+                   . "'" . mysqli_real_escape_string( $link, $name ) ."', "
+                   . "'" . mysqli_real_escape_string( $link, $comment ) . "'"
+                   ." ) ";
+
+            $res   = mysqli_query( $link, $query );
+
+            if ( $res !== false ) {
+                $msg = 'successed';
+            }else{
+                $err_msg = 'failed';
+            }
+        }else{
+            $err_msg = 'please fill name and comment';
+        }
     }
-    arsort( $data );
+
 
 } else {
     echo "failed to connect database";
@@ -30,26 +48,36 @@ if ( $link !== false ) {
 mysqli_close( $link );
 ?>
 
-
+<?php
+session_start();
+$_SESSION["name"] = $name;
+$_SESSION["comment"] = $comment;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>SCREEN</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/phoneawaystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script type="text/javascript" src="../js/move.js"></script>
-<script type="text/javascript">
-    setTimeout("location.reload()",1000*14);　
-  </script>
+  <script src="../js/jquery.vide.js"></script>
+  <script>
+$(function(){
+  $('body').vide('../paper4');
+});
+</script>
 </head>
+<body>
+
+<div class="wrap">
+
+
 <div id="plate" class="front">
               <img id="img" class="image" src="../images/worry.png" width="100px" height="95px" alt="" />
               <p class="message"　>
                 <?php
-                  foreach( $data as $key => $val ){
-                      echo  $val['comment'] ;
-                  }
+                      echo  $_SESSION['comment'];
               ?>
             </p>
         </div>
@@ -70,5 +98,15 @@ mysqli_close( $link );
             </div>
 
         </div>
+        </div>
+        <SCRIPT LANGUAGE="JavaScript">
+
+      function autoLink()
+      {
+      location.href="http://37.97.136.49/timeflies/php/uploadText.php";
+      }
+      setTimeout("autoLink()",13500);
+
+      </SCRIPT>
 </body>
 </html>

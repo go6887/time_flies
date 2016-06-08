@@ -1,7 +1,7 @@
 <?php
 
 $db_host = 'localhost';
-$db_name = 'textboxes';
+$db_name = 'textbox';
 $db_user = 'root';
 $db_pass = 'sch1ph0ldb';
 
@@ -12,9 +12,9 @@ if ( $link !== false ) {
     $msg     = '';
     $err_msg = '';
 
-    // $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t ORDER BY RAND() LIMIT 1";
+    $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t WHERE comment NOT LIKE '%terro%' ORDER BY RAND() LIMIT 1";
     // $query  = "SELECT * FROM board WHERE comment NOT LIKE '%terro%'  order by id desc limit 1";
-    $query  = "SELECT * FROM board WHERE used IS NULL order by id asc limit 1";
+    // $query  = "SELECT * FROM board WHERE used IS NULL order by id asc limit 1";
     $res    = mysqli_query( $link,$query );
     $data = array();
     while( $row = mysqli_fetch_assoc( $res ) ) {
@@ -77,34 +77,5 @@ $(function(){
             </div>
 
         </div>
-        <?php
-
-        $db_host = 'localhost';
-        $db_name = 'textboxes';
-        $db_user = 'root';
-        $db_pass = 'sch1ph0ldb';
-
-        // connect database
-        $link = mysqli_connect( $db_host, $db_user, $db_pass, $db_name );
-        if ( $link !== false ) {
-
-            $msg     = '';
-            $err_msg = '';
-
-            $query  = "UPDATE board SET used = 'yes' WHERE used IS NULL ORDER BY id asc limit 1";
-            $res    = mysqli_query( $link,$query );
-            $data = array();
-            while( $row = mysqli_fetch_assoc( $res ) ) {
-                array_push( $data, $row);
-            }
-            arsort( $data );
-
-        } else {
-            echo "failed to connect database";
-        }
-
-        // close database
-        mysqli_close( $link );
-        ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 $db_host = 'localhost';
-$db_name = 'textboxes';
+$db_name = 'textbox';
 $db_user = 'root';
 $db_pass = 'sch1ph0ldb';
 
