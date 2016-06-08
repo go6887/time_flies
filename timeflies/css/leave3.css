@@ -36,9 +36,14 @@ ul li a {
   margin-top: 30%;
 }
 
+@font-face {
+  font-family: 'MyFont3';
+  src: url("../FrutigerLTStd-BoldCn.otf");
+}
+
 .great{
   color: #ffffff;
-  font-family: 'Frutiger LT Std 67 Bold Condensed','Noto-Sans', Arial, sans-serif;
+  font-family: 'MyFont3',Helvetica, Arial, Verdana;
   font-size: 35px;
   text-align: center;
 }

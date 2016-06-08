@@ -70,7 +70,7 @@ function autoLink()
 {
 location.href="http://37.97.136.49/timeflies/last.php";
 }
-setTimeout("autoLink()",10000);
+setTimeout("autoLink()",4000);
 
 </SCRIPT>
 </body>

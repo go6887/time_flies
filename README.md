@@ -1,4 +1,4 @@
-cLeave Behind Worries Behind
+Leave Behind Worries Behind
 ====
 
 
@@ -30,3 +30,6 @@ Server
 ## Reference
 When I made fly_away animation, I used this as reference.  
 http://codepen.io/cihadturhan/pen/KIJdD
+
+## LICENCE
+Produced by Team Time Flies

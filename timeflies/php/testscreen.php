@@ -46,7 +46,7 @@ $(function(){
 });
 </script>
 <script type="text/javascript">
-    setTimeout("location.reload()",1000*14);　
+    setTimeout("location.reload()",1000*14.5);　
   </script>
 
 </head>
@@ -57,35 +57,6 @@ $(function(){
                   foreach( $data as $key => $val ){
                       echo  $val['comment'] ;
                   }
-              ?>
-              <?php
-
-              $db_host = 'localhost';
-              $db_name = 'textboxes';
-              $db_user = 'root';
-              $db_pass = 'sch1ph0ldb';
-
-              // connect database
-              $link = mysqli_connect( $db_host, $db_user, $db_pass, $db_name );
-              if ( $link !== false ) {
-
-                  $msg     = '';
-                  $err_msg = '';
-
-                  $query  = "UPDATE board SET used = 'yes' WHERE used IS NULL ORDER BY id asc limit 1";
-                  $res    = mysqli_query( $link,$query );
-                  $data = array();
-                  while( $row = mysqli_fetch_assoc( $res ) ) {
-                      array_push( $data, $row);
-                  }
-                  arsort( $data );
-
-              } else {
-                  echo "failed to connect database";
-              }
-
-              // close database
-              mysqli_close( $link );
               ?>
             </p>
         </div>
@@ -106,6 +77,34 @@ $(function(){
             </div>
 
         </div>
+        <?php
 
+        $db_host = 'localhost';
+        $db_name = 'textboxes';
+        $db_user = 'root';
+        $db_pass = 'sch1ph0ldb';
+
+        // connect database
+        $link = mysqli_connect( $db_host, $db_user, $db_pass, $db_name );
+        if ( $link !== false ) {
+
+            $msg     = '';
+            $err_msg = '';
+
+            $query  = "UPDATE board SET used = 'yes' WHERE used IS NULL ORDER BY id asc limit 1";
+            $res    = mysqli_query( $link,$query );
+            $data = array();
+            while( $row = mysqli_fetch_assoc( $res ) ) {
+                array_push( $data, $row);
+            }
+            arsort( $data );
+
+        } else {
+            echo "failed to connect database";
+        }
+
+        // close database
+        mysqli_close( $link );
+        ?>
 </body>
 </html>

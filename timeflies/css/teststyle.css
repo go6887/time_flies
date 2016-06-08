@@ -301,12 +301,8 @@
 html {
     height: 100%;
     width: 100%;
-<<<<<<< HEAD:prototypever2/css/style.css
-    background-color: rgba(0,92,151,0.25);
-
-=======
     /*background-color: rgba(0,92,151,0.25);*/
->>>>>>> newfolder:timeflies/css/teststyle.css
+
 
     -webkit-background-size: 100px 100px;
     -moz-background-size: 100px 100px;
