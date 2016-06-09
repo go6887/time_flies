@@ -58,7 +58,7 @@ $_SESSION["comment"] = $comment;
 <head>
   <meta charset="UTF-8">
   <title>SCREEN</title>
-  <link rel="stylesheet" href="../css/phoneawaystyle.css">
+  <link rel="stylesheet" href="../css/phonescreen.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script type="text/javascript" src="../js/move.js"></script>
   <script src="../js/jquery.vide.js"></script>

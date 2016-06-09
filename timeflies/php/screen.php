@@ -36,13 +36,13 @@ mysqli_close( $link );
 <head>
   <meta charset="UTF-8">
   <title>SCREEN</title>
-  <link rel="stylesheet" href="../css/teststyle.css">
+  <link rel="stylesheet" href="../css/screen.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script type="text/javascript" src="../js/move.js"></script>
   <script src="../js/jquery.vide.js"></script>
   <script>
 $(function(){
-  $('body').vide('../paper4');
+  $('body').vide('../paper5');
 });
 </script>
 <script type="text/javascript">

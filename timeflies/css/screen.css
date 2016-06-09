@@ -314,6 +314,7 @@ body {
     -webkit-perspective: 800;
     -webkit-perspective-origin: 50% 50%;
     height: 100%;
+    
     background-color: rgba(0,92,151,0.25);
 }
 

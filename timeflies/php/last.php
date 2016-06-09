@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- IE対策 -->
   <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> <!-- スマホ画面対策 -->
   <title>Leave Your Worries Behind</title>
-  <link rel="stylesheet" href="./css/leave3.css">
+  <link rel="stylesheet" href="../css/last.css">
 </head>
 <body>
   <div id="container">
@@ -23,7 +23,7 @@
   <div class="form">
     <form method="post" action="">
       <ul>
-        <li><a href="index.html"><input id="button" type="button" name="send" value="COLLECT REWARD" width="150px"/></a></li>
+        <li><a href="../fly_away.html"><input id="button" type="button" name="send" value="COLLECT REWARD" width="150px"/></a></li>
         <li><a href="http://twitter.com/intent/tweet?text=<?php echo $_SESSION['comment'] ?>"
           onClick="window.open(encodeURI(decodeURI(this.href)),
           'tweetwindow',
