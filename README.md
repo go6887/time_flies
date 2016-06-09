@@ -16,12 +16,13 @@ Our purposel for this design challenge is to entertain the leisure traveller in 
 User  
 1.Prepare your smartphone  
 2.Open a browser (Recommend Google Chrome)  
-3.http://37.97.136.49/timeflies/  
+3.http://37.97.136.49/timeflies/leave.html  
 4.Write your name and  your worry  
 5.Enter “MAKE IT FLY AWAY”  
-6Wait 10 seconds  
-7.If you share your worry through SNS(Twitter), you enter “SHARE” or if you want to get reward, you enter “COLLECT REWARD”.  
-8.Done  
+6.Watch fly_away animation
+7.Wait 4 seconds
+8.If you share your worry through SNS(Twitter), you enter “SHARE” or if you want to get reward, you enter “COLLECT REWARD”.  
+9.Done  
 
 Server  
 1.Prepare the screen  
