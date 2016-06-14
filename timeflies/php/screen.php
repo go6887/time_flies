@@ -12,9 +12,24 @@ if ( $link !== false ) {
     $msg     = '';
     $err_msg = '';
 
-    $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t WHERE comment NOT LIKE '%terro%' ORDER BY RAND() LIMIT 1";
-    // $query  = "SELECT * FROM board WHERE comment NOT LIKE '%terro%'  order by id desc limit 1";
-    // $query  = "SELECT * FROM board WHERE used IS NULL order by id asc limit 1";
+    $query  = "SELECT * FROM (SELECT * FROM `board` ORDER BY id DESC LIMIT 10) AS t WHERE comment NOT LIKE '%terror%'
+    OR comment NOT LIKE '%attack%'
+    OR comment NOT LIKE '%bomb%'
+    OR comment NOT LIKE '%bomb%'
+    OR comment NOT LIKE '%fuck%'
+    OR comment NOT LIKE '%isis%'
+    OR comment NOT LIKE '%shit%'
+    OR comment NOT LIKE '%muslim%'
+    OR comment NOT LIKE '%islam%'
+    OR comment NOT LIKE '%explosion%'
+    OR comment NOT LIKE '%gun%'
+    OR comment NOT LIKE '%victim%'
+    OR comment NOT LIKE '%knife%'
+    OR comment NOT LIKE '%molotov%'
+    OR comment NOT LIKE '%shooting%'
+    OR comment NOT LIKE '%hostage%'
+    ORDER BY RAND() LIMIT 1";
+    
     $res    = mysqli_query( $link,$query );
     $data = array();
     while( $row = mysqli_fetch_assoc( $res ) ) {
@@ -42,11 +57,11 @@ mysqli_close( $link );
   <script src="../js/jquery.vide.js"></script>
   <script>
 $(function(){
-  $('body').vide('../paper5');
+  $('body').vide('../paper6');
 });
 </script>
 <script type="text/javascript">
-    setTimeout("location.reload()",1000*14.5);　
+    setTimeout("location.reload()",1000*11.0);　
   </script>
 
 </head>
