@@ -7,8 +7,8 @@ Leave Your Worries Behind
 Our purposel for this design challenge is to entertain the leisure traveller in the waiting area by making the waiting time into a positive experience.
 
 ## How to set up
-1.Prepare Database and Apache Server  
-2.Create table in the database   
+1.Prepare Database and Apache Server
+2.Create table in the database    
 3.Upload these files to your apache server  
 
 
@@ -21,7 +21,7 @@ User
 5.Enter “MAKE IT FLY AWAY”  
 6.Watch fly_away animation  
 7.Wait 4 seconds  
-8.If you share your worry through SNS(Twitter), you enter “SHARE” or if you want to get reward, you enter “COLLECT REWARD”.  
+8.If you want to share your worry through SNS(Twitter), enter “SHARE” or if you want to get reward, enter “COLLECT REWARD” or is you want to send another worry, enter "SEND ANOTHER".  
 9.Done  
 
 Server  
