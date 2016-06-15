@@ -29,7 +29,7 @@ if ( $link !== false ) {
     OR comment NOT LIKE '%shooting%'
     OR comment NOT LIKE '%hostage%'
     ORDER BY RAND() LIMIT 1";
-    
+
     $res    = mysqli_query( $link,$query );
     $data = array();
     while( $row = mysqli_fetch_assoc( $res ) ) {

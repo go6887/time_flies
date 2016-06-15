@@ -64,7 +64,7 @@ $_SESSION["comment"] = $comment;
   <script src="../js/jquery.vide.js"></script>
   <script>
 $(function(){
-  $('body').vide('../paper4');
+  $('body').vide('../paper6');
 });
 </script>
 </head>
@@ -105,7 +105,7 @@ $(function(){
       {
       location.href="http://37.97.136.49/timeflies/php/uploadText.php";
       }
-      setTimeout("autoLink()",13500);
+      setTimeout("autoLink()",11000);
 
       </SCRIPT>
 </body>

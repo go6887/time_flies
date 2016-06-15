@@ -11,11 +11,11 @@
 
   <script LANGUAGE="JavaScript">
 
-function autoLink()
-{
-location.href="http://37.97.136.49/timeflies/php/last.php";
-}
-setTimeout("autoLink()",4000);
+    function autoLink()
+      {
+          location.href="http://37.97.136.49/timeflies/php/last.php";
+    }
+        setTimeout("autoLink()",4000);
 
 </script>
 </body>
