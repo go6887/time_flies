@@ -2,6 +2,8 @@ Leave Your Worries Behind
 ====
 
 
+## Overview
+The system exist out of an apache server with a database and a website for mobile phones. On this website people can upload content which will be send to the database. People can see own content on your phone. In addition to, content randomly appear from database on public screen from among the latest 10 contents. Appeared content is folded and becomes paper airplane. Paper airplane is going to fly away. And people can look others contents.
 
 ## Goal
 Our purposel for this design challenge is to entertain the leisure traveller in the waiting area by making the waiting time into a positive experience.
@@ -10,7 +12,6 @@ Our purposel for this design challenge is to entertain the leisure traveller in 
 1.Prepare Database and Apache Server
 2.Create table in the database    
 3.Upload these files to your apache server  
-
 
 ## How to use
 User  
@@ -26,7 +27,7 @@ User
 
 Server  
 1.Prepare the screen  
-2.http://37.97.136.49/timeflies/php/screen.php  
+2.Open http://37.97.136.49/timeflies/php/screen.php   
 
 ## Reference
 When I made fly_away animation, I used this as reference.  
