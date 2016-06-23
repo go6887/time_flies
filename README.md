@@ -31,7 +31,7 @@ User
 Server  
 1.Prepare the screen  
 2.Put the screen in the waiting line  
-3.Open http://37.97.136.49/timeflies/php/screen.php   
+3.Open http://37.97.136.49/timeflies/php/screen.php (Recommend Google Chrome)   
 
 ## Reference
 When I made fly_away animation, I used this as reference.  
