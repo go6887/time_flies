@@ -13,6 +13,9 @@ Our purposel for this design challenge is to entertain the leisure traveller in 
 2.Create table in the database    
 3.Upload these files to your apache server  
 
+# Database Script
+create table board( id int not null auto_increment primary key, name varchar(20), comment text);
+
 ## How to use
 User  
 1.Prepare your smartphone  
@@ -22,7 +25,7 @@ User
 5.Enter “MAKE IT FLY AWAY”  
 6.Watch fly_away animation  
 7.Wait 4 seconds  
-8.If you want to share your worry through SNS(Twitter), enter “SHARE” or if you want to get reward, enter “COLLECT REWARD” or is you want to send another worry, enter "SEND ANOTHER".  
+8.Get voucher (virtual voucher in the case of our prototype)  
 9.Done  
 
 Server  
