@@ -13,7 +13,7 @@ Our purposel for this design challenge is to entertain the leisure traveller in 
 2.Create table in the database    
 3.Upload these files to your apache server  
 
-# Database Script
+## Database Script
 create table board( id int not null auto_increment primary key, name varchar(20), comment text);
 
 ## How to use
