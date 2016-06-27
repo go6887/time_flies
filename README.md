@@ -16,22 +16,20 @@ Our purposel for this design challenge is to entertain the leisure traveller in 
 ## Database Script
 create table board( id int not null auto_increment primary key, name varchar(20), comment text);
 
-## How to use
+## User Manual
 User  
 1.Prepare your smartphone  
 2.Open a browser (Recommend Google Chrome)  
-3.http://37.97.136.49/timeflies/leave.html  
+3.Go to http://37.97.136.49/timeflies/leave.html  
 4.Write your name and  your worry  
 5.Enter “MAKE IT FLY AWAY”  
-6.Watch fly_away animation  
-7.Wait 4 seconds  
-8.If you want to share your worry through SNS(Twitter), enter “SHARE” or if you want to get reward, enter “COLLECT REWARD”(virtual voucher in the case of our prototype) or is you want to send another worry, enter "SEND ANOTHER".  
-9.Done  
+6.See the paper airplane fly away      
+7.If you want to share your worry through SNS(Twitter), enter “SHARE” or if you want to get reward, enter “COLLECT REWARD”(virtual voucher in the case of our prototype) or is you want to send another worry, enter "SEND ANOTHER".  
 
 Server  
 1.Prepare the screen  
 2.Put the screen in the waiting line  
-3.Open http://37.97.136.49/timeflies/php/screen.php (Recommend Google Chrome)   
+3.Go to Open http://37.97.136.49/timeflies/php/screen.php (Recommend Google Chrome)   
 
 ## Reference
 When I made fly_away animation, I used this as reference.  
