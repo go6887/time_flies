@@ -103,7 +103,7 @@ $(function(){
 
       function autoLink()
       {
-      location.href="http://37.97.136.49/timeflies/php/uploadText.php";
+      location.href="http://37.97.136.49/timeflies_me/php/uploadText.php";
       }
       setTimeout("autoLink()",11000);
 

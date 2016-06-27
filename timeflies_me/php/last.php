@@ -22,7 +22,7 @@
   <div class="form">
     <form method="post" action="">
       <ul>
-        <li><input id="button" type="button" name="send" value="COLLECT REWARD" width="150px"/></li>
+        <li><a href="../voucher.html"><input id="button" type="button" name="send" value="COLLECT REWARD" width="150px"/></a></li>
         <li><a href="http://twitter.com/intent/tweet?text=<?php echo $_SESSION['comment'] ?>"
           onClick="window.open(encodeURI(decodeURI(this.href)),
           'tweetwindow',
