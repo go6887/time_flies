@@ -9,7 +9,7 @@ The system exist out of an apache server with a database and a website for mobil
 Our purposel for this design challenge is to entertain the leisure traveller in the waiting area by making the waiting time into a positive experience.
 
 ## How to set up
-1.Prepare Database and Apache Server
+1.Prepare Database and Apache Server  
 2.Create table in the database    
 3.Upload these files to your apache server  
 
